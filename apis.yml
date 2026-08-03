@@ -1,0 +1,55 @@
+name: TradeBB
+description: >-
+  An automated, AI-assisted trading journal and trade-analysis tool that imports, syncs, reviews, and analyzes trades
+  across stocks, options, futures, forex, crypto, CFD, and multi-asset markets. Offers broker-file import, read-only
+  broker sync, performance dashboards, and a Mentor Mode for coaches and educators.
+url: https://tradebb.apievangelist.com/apis.yml
+created: '2026-08-03'
+modified: '2026-08-03'
+specificationVersion: '0.21'
+tags:
+  - trading-journal
+  - trade-analytics
+  - fintech
+  - trading-tools
+  - stocks
+  - options
+  - futures
+  - forex
+  - crypto
+  - cfd
+  - ai-assistant
+  - llms-txt
+apis:
+  - name: TradeBB
+    description: >-
+      TradeBB exposes a single publicly consumable machine-readable interface: an llms.txt file designed for LLM
+      consumption. There is no public REST/GraphQL API, MCP server, or agent skills.
+    humanURL: https://www.tradebb.ai/help-center
+    baseURL: https://www.tradebb.ai
+    tags:
+      - trading-journal
+      - trade-analytics
+      - fintech
+      - trading-tools
+      - stocks
+      - options
+      - futures
+      - forex
+      - crypto
+      - cfd
+      - ai-assistant
+      - llms-txt
+    properties:
+      - type: LLMSTxt
+        url: https://www.tradebb.ai/llms.txt
+      - type: Documentation
+        url: https://www.tradebb.ai/help-center
+maintainers:
+  - FN: TradeBB
+    url: https://www.tradebb.ai
+generated:
+  by: apis.io/add
+  model: claude-opus-4-8
+  confidence: 90
+  at: '2026-08-03T06:54:30.017Z'
