@@ -5,8 +5,9 @@ description: >-
   broker sync, performance dashboards, and a Mentor Mode for coaches and educators.
 url: https://tradebb.apievangelist.com/apis.yml
 created: '2026-08-03'
-modified: '2026-08-03'
+modified: '2026-08-09'
 specificationVersion: '0.21'
+image: https://static.tradebb.ai/20251121/home.webp
 tags:
   - trading-journal
   - trade-analytics
@@ -47,9 +48,64 @@ apis:
         url: https://www.tradebb.ai/help-center
 maintainers:
   - FN: TradeBB
+    email: support@tradebb.ai
     url: https://www.tradebb.ai
 generated:
   by: apis.io/add
   model: claude-opus-4-8
   confidence: 90
   at: '2026-08-03T06:54:30.017Z'
+common:
+- type: DomainSecurity
+  url: security/tradebb-domain-security.yml
+- type: LLMsTxt
+  name: TradeBB llms.txt (harvested verbatim)
+  url: llms/tradebb-llms.txt
+- type: Conformance
+  name: TradeBB standards conformance + contract discovery
+  url: conformance/tradebb-conformance.yml
+- type: Documentation
+  url: https://www.tradebb.ai/help-center
+- type: GettingStarted
+  url: https://www.tradebb.ai/help-center/getting-started/how-to-import-your-first-trades
+- type: Support
+  url: https://www.tradebb.ai/contact
+- type: Blog
+  url: https://www.tradebb.ai/blog
+- type: Pricing
+  url: https://www.tradebb.ai/pricing
+- type: SignUp
+  url: https://www.tradebb.ai/sign-up
+- type: Login
+  url: https://www.tradebb.ai/sign-in
+- type: TermsOfService
+  url: https://www.tradebb.ai/terms-of-service
+- type: PrivacyPolicy
+  url: https://www.tradebb.ai/privacy-policy
+
+x-enrichment:
+  date: '2026-08-09'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    TradeBB is an end-user trading-journal SaaS with no developer program at all — the
+    only machine-readable document it serves is /llms.txt, its api.tradebb.ai backend
+    answers every probed path with a 404 problem+json, and the apis.json the submitter
+    cited does not exist.
+  evidence:
+    - url: https://www.tradebb.ai/llms.txt
+      status: 200
+    - url: https://www.tradebb.ai/apis.json
+      status: 404
+    - url: https://api.tradebb.ai/openapi.json
+      status: 404
+    - url: https://www.tradebb.ai/developers
+      status: 404
+    - url: https://www.tradebb.ai/.well-known/agent-card.json
+      status: 404
+  checked: '2026-08-09'

@@ -1,0 +1,46 @@
+generated: '2026-08-09'
+method: probed
+source: live probes of /.well-known/ on TradeBB hosts
+note: >-
+  No /.well-known/ document was found on any TradeBB host. Every path returned 404.
+  Recorded as negative evidence — no WellKnown or SecurityTxt pointer is wired,
+  because nothing was published to point at.
+hosts:
+  - host: https://www.tradebb.ai
+    documents:
+      - path: /.well-known/security.txt          # RFC 9116
+        status: 404
+      - path: /.well-known/openid-configuration  # OIDC discovery
+        status: 404
+      - path: /.well-known/oauth-authorization-server  # RFC 8414
+        status: 404
+      - path: /.well-known/api-catalog           # RFC 9727
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /.well-known/agent-card.json       # A2A 1.0.0
+        status: 404
+      - path: /.well-known/agent.json            # A2A pre-0.3 legacy
+        status: 404
+  - host: https://api.tradebb.ai
+    note: >-
+      Resolves (CNAME api.tradebb.ai.a1.initzz.com) and answers with
+      application/problem+json 404s from a Spring-style application backend
+      ("No static resource ."). It is the TradeBB web application's private
+      backend, not a documented public API.
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/oauth-protected-resource   # RFC 9728
+        status: 404
+      - path: /.well-known/agent-card.json
+        status: 404
+      - path: /.well-known/agent.json
+        status: 404
+x-evidence:
+  fetched: '2026-08-09'
+  method: HTTP GET, redirects followed
