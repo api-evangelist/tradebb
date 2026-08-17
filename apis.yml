@@ -3,7 +3,7 @@ description: >-
   An automated, AI-assisted trading journal and trade-analysis tool that imports, syncs, reviews, and analyzes trades
   across stocks, options, futures, forex, crypto, CFD, and multi-asset markets. Offers broker-file import, read-only
   broker sync, performance dashboards, and a Mentor Mode for coaches and educators.
-url: https://tradebb.apievangelist.com/apis.yml
+url: https://raw.githubusercontent.com/api-evangelist/tradebb/refs/heads/main/apis.yml
 created: '2026-08-03'
 modified: '2026-08-09'
 specificationVersion: '0.21'
