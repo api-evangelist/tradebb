@@ -6,7 +6,7 @@ description: >-
 url: https://raw.githubusercontent.com/api-evangelist/tradebb/refs/heads/main/apis.yml
 created: '2026-08-03'
 modified: '2026-08-09'
-specificationVersion: '0.21'
+specificationVersion: '0.23'
 image: https://static.tradebb.ai/20251121/home.webp
 tags:
   - trading-journal
