@@ -4,6 +4,17 @@ description: >-
   across stocks, options, futures, forex, crypto, CFD, and multi-asset markets. Offers broker-file import, read-only
   broker sync, performance dashboards, and a Mentor Mode for coaches and educators.
 url: https://raw.githubusercontent.com/api-evangelist/tradebb/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 created: '2026-08-03'
 modified: '2026-08-09'
 specificationVersion: '0.23'
