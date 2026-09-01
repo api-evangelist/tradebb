@@ -21,15 +21,15 @@ specificationVersion: '0.23'
 image: https://static.tradebb.ai/20251121/home.webp
 tags:
   - trading-journal
-  - trade-analytics
+  - Trade Analytics
   - Fintech
   - trading-tools
-  - stocks
+  - Stocks
   - Options
-  - futures
+  - Futures
   - Forex
   - Crypto
-  - cfd
+  - CFD
   - AI Assistant
   - llms-txt
 tags_raw:
@@ -54,15 +54,15 @@ apis:
     baseURL: https://www.tradebb.ai
     tags:
       - trading-journal
-      - trade-analytics
+      - Trade Analytics
       - Fintech
       - trading-tools
-      - stocks
+      - Stocks
       - Options
-      - futures
+      - Futures
       - Forex
       - Crypto
-      - cfd
+      - CFD
       - AI Assistant
       - llms-txt
     tags_raw:
