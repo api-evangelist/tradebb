@@ -105,6 +105,8 @@ generated:
   confidence: 90
   at: '2026-08-03T06:54:30.017Z'
 common:
+- type: Website
+  url: https://www.tradebb.ai/
 - type: DomainSecurity
   url: security/tradebb-domain-security.yml
 - type: LLMsTxt
