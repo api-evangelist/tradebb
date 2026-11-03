@@ -23,9 +23,10 @@ accessModel:
   public: false
   label: Unknown
   confidence: low
+  probe_state: none
   source:
   - security
-  generated: '2026-09-02'
+  generated: '2026-11-02'
   method: derived
 created: '2026-08-03'
 modified: '2026-08-09'
